@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://reserve30a.net/sitemap.xml
