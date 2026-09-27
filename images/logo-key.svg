@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Reserve 30A key">
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#C4A35A" stroke-width="5.2"/>
+  <g fill="none" stroke="#C4A35A" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="100" cy="50" r="16.2" stroke-width="5.1"/>
+    <circle cx="84.2" cy="70.2" r="16.2" stroke-width="5.1"/>
+    <circle cx="115.8" cy="70.2" r="16.2" stroke-width="5.1"/>
+    <circle cx="100" cy="63.6" r="6.1" stroke-width="5.1"/>
+    <line x1="100" y1="86.4" x2="100" y2="158" stroke-width="5.4"/>
+    <rect x="100" y="135.5" width="29" height="22.5" rx="1" stroke-width="5.1"/>
+    <rect x="109.2" y="141.6" width="10.4" height="10.4" rx="0.4" stroke-width="4.4"/>
+  </g>
+</svg>
