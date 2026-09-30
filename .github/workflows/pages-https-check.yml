@@ -1,0 +1,28 @@
+name: pages-https-check
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/pages-https-check.yml
+permissions:
+  pages: write
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect Pages certificate and DNS health
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          echo "===== HEALTH ====="
+          gh api repos/jessie826/reserve30a/pages/health
+          echo
+          echo "===== PUT HTTPS ====="
+          gh api --method PUT repos/jessie826/reserve30a/pages --input - <<'EOF'
+          {"cname":"www.reserve30a.net","https_enforced":true}
+          EOF
+          echo
+          echo "===== GET ====="
+          gh api repos/jessie826/reserve30a/pages
